@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Skills — Hyunji Kim</title>
 <meta name="description" content="Tools, equipment, and methods across biomechanics, wearable sensing, and data science.">
-<link rel="stylesheet" href="style.css?v=4">
+<link rel="stylesheet" href="style.css?v=5">
 </head>
 <body>
 
@@ -47,49 +47,85 @@
 
     <div class="skill-block">
       <h2 class="sub">Languages</h2>
-      <div class="keyword-tags">
-        <span class="kw">Korean — Native</span>
-        <span class="kw">English — Upper-Intermediate</span>
-        <span class="kw">Japanese — Elementary</span>
-        <span class="kw">Chinese — Beginner</span>
-      </div>
+      <ul class="lang-list">
+        <li>
+          <span class="lang-flag">🇰🇷</span>
+          <span class="lang-name">Korean</span>
+          <span class="lang-level">Native</span>
+          <span class="lang-dots"><span class="dot on"></span><span class="dot on"></span><span class="dot on"></span><span class="dot on"></span><span class="dot on"></span></span>
+        </li>
+        <li>
+          <span class="lang-flag">🇺🇸</span>
+          <span class="lang-name">English</span>
+          <span class="lang-level">Upper-Intermediate</span>
+          <span class="lang-dots"><span class="dot on"></span><span class="dot on"></span><span class="dot on"></span><span class="dot on"></span><span class="dot"></span></span>
+        </li>
+        <li>
+          <span class="lang-flag">🇯🇵</span>
+          <span class="lang-name">Japanese</span>
+          <span class="lang-level">Elementary</span>
+          <span class="lang-dots"><span class="dot on"></span><span class="dot on"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span></span>
+        </li>
+        <li>
+          <span class="lang-flag">🇨🇳</span>
+          <span class="lang-name">Chinese</span>
+          <span class="lang-level">Beginner</span>
+          <span class="lang-dots"><span class="dot on"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span></span>
+        </li>
+      </ul>
     </div>
 
     <div class="skill-block">
       <h2 class="sub">Programming &amp; Computational Methods</h2>
-      <div class="keyword-tags">
-        <span class="kw">MATLAB</span><span class="kw">Python</span><span class="kw">R</span>
-        <span class="kw">PyTorch / transfer learning</span>
-        <span class="kw">Multimodal biosignal processing (EMG, kinematics, kinetics, metabolic data)</span>
+      <div class="skill-card-grid">
+        <div class="skill-card"><span class="skill-card-icon">💻</span><span class="skill-card-title">MATLAB</span></div>
+        <div class="skill-card"><span class="skill-card-icon">🐍</span><span class="skill-card-title">Python</span></div>
+        <div class="skill-card"><span class="skill-card-icon">📐</span><span class="skill-card-title">R</span></div>
+        <div class="skill-card"><span class="skill-card-icon">🧠</span><span class="skill-card-title">PyTorch<small>Transfer learning</small></span></div>
+        <div class="skill-card"><span class="skill-card-icon">📡</span><span class="skill-card-title">Biosignal processing<small>EMG, kinematics, kinetics, metabolic data</small></span></div>
       </div>
     </div>
 
     <div class="skill-block">
       <h2 class="sub">Experimental Systems &amp; Data Acquisition</h2>
-      <div class="keyword-tags">
-        <span class="kw">Motion capture (Qualisys, Optitrack)</span>
-        <span class="kw">Force plates (Bertec, AMTI)</span>
-        <span class="kw">Instrumented treadmill</span>
-        <span class="kw">Surface EMG (DELSYS, Noraxon)</span>
-        <span class="kw">Custom wearable IMU sensors</span>
-        <span class="kw">Xsens motion capture</span>
-        <span class="kw">Commercial wearables (Galaxy Watch, Galaxy Buds)</span>
-        <span class="kw">Pedar insole pressure</span>
-        <span class="kw">Zebris pressure treadmill</span>
-        <span class="kw">COSMED K5 metabolic cart</span>
-        <span class="kw">Polar HR monitoring</span>
-        <span class="kw">Lactate meter</span>
-        <span class="kw">Custom wheelchair ergometer + DAQ (LabJack, LabVIEW)</span>
-        <span class="kw">Computer vision from smartphone video</span>
+
+      <div class="skill-group">
+        <h3 class="skill-group-label">Motion Capture &amp; Wearables</h3>
+        <div class="keyword-tags">
+          <span class="kw">Qualisys / Optitrack</span><span class="kw">Custom wearable IMU sensors</span><span class="kw">Xsens</span><span class="kw">Galaxy Watch / Buds</span>
+        </div>
+      </div>
+
+      <div class="skill-group">
+        <h3 class="skill-group-label">Force &amp; Pressure</h3>
+        <div class="keyword-tags">
+          <span class="kw">Bertec / AMTI force plates</span><span class="kw">Instrumented treadmill</span><span class="kw">Pedar insole pressure</span><span class="kw">Zebris pressure treadmill</span>
+        </div>
+      </div>
+
+      <div class="skill-group">
+        <h3 class="skill-group-label">Muscle &amp; Physiology</h3>
+        <div class="keyword-tags">
+          <span class="kw">DELSYS / Noraxon EMG</span><span class="kw">COSMED K5 metabolic cart</span><span class="kw">Polar HR monitoring</span><span class="kw">Lactate meter</span>
+        </div>
+      </div>
+
+      <div class="skill-group">
+        <h3 class="skill-group-label">Custom-Built Systems</h3>
+        <div class="keyword-tags">
+          <span class="kw">Wheelchair ergometer + DAQ (LabJack, LabVIEW)</span><span class="kw">Computer vision from smartphone video</span>
+        </div>
       </div>
     </div>
 
     <div class="skill-block">
       <h2 class="sub">Modeling &amp; Biomechanical Analysis</h2>
-      <div class="keyword-tags">
-        <span class="kw">Inverse dynamics</span>
-        <span class="kw">Musculoskeletal modeling (AnyBody, OpenSim, Visual3D)</span>
-        <span class="kw">PCA</span><span class="kw">LDA</span><span class="kw">Muscle synergy analysis</span>
+      <div class="skill-card-grid">
+        <div class="skill-card"><span class="skill-card-icon">⚙️</span><span class="skill-card-title">Inverse Dynamics</span></div>
+        <div class="skill-card"><span class="skill-card-icon">🦴</span><span class="skill-card-title">Musculoskeletal Modeling<small>AnyBody, OpenSim, Visual3D</small></span></div>
+        <div class="skill-card"><span class="skill-card-icon">📉</span><span class="skill-card-title">PCA</span></div>
+        <div class="skill-card"><span class="skill-card-icon">📊</span><span class="skill-card-title">LDA</span></div>
+        <div class="skill-card"><span class="skill-card-icon">🔗</span><span class="skill-card-title">Muscle Synergy Analysis</span></div>
       </div>
     </div>
 
@@ -100,22 +136,22 @@
 
     <div class="skill-block">
       <h2 class="sub">Research &amp; Soft Skills</h2>
-      <ul class="plain-list compact">
-        <li>Founding member of a new laboratory (Sports Engineering Laboratory, SNU) — established core equipment, experimental setups, and research protocols</li>
-        <li>Independent project design and execution from conception to completion</li>
-        <li>Interdisciplinary collaboration across biomechanics, sports engineering, mechanical engineering, textile/clothing engineering, and clinical research</li>
+      <ul class="icon-list">
+        <li><span class="icon-list-icon">🔬</span>Founding member of a new laboratory (Sports Engineering Laboratory, SNU) — established core equipment, experimental setups, and research protocols</li>
+        <li><span class="icon-list-icon">🎯</span>Independent project design and execution from conception to completion</li>
+        <li><span class="icon-list-icon">🤝</span>Interdisciplinary collaboration across biomechanics, sports engineering, mechanical engineering, textile/clothing engineering, and clinical research</li>
       </ul>
     </div>
 
     <div class="skill-block">
       <h2 class="sub">Professional Memberships</h2>
-      <ul class="plain-list compact">
-        <li>IEEE Engineering in Medicine and Biology Society (EMBS), 2024–present</li>
-        <li>American Society of Biomechanics (ASB), 2025–present</li>
-        <li>International Women in Biomechanics (IWB), 2024–present</li>
-        <li>Ergonomics Society of Korea, 2025</li>
-        <li>Korean Society of Martial Arts, 2026–present</li>
-        <li>Korean Society of Sport Biomechanics (KSSB), 2021–present</li>
+      <ul class="membership-list">
+        <li><span class="membership-name">IEEE Engineering in Medicine and Biology Society (EMBS)</span><span class="membership-year">2024–present</span></li>
+        <li><span class="membership-name">American Society of Biomechanics (ASB)</span><span class="membership-year">2025–present</span></li>
+        <li><span class="membership-name">International Women in Biomechanics (IWB)</span><span class="membership-year">2024–present</span></li>
+        <li><span class="membership-name">Ergonomics Society of Korea</span><span class="membership-year">2025</span></li>
+        <li><span class="membership-name">Korean Society of Martial Arts</span><span class="membership-year">2026–present</span></li>
+        <li><span class="membership-name">Korean Society of Sport Biomechanics (KSSB)</span><span class="membership-year">2021–present</span></li>
       </ul>
     </div>
   </section>

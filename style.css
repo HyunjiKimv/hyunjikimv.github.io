@@ -927,3 +927,144 @@ summary {
   font-size: 14px;
   color: var(--text-muted);
 }
+
+/* Skills page */
+.lang-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.lang-list li {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 14px 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.lang-list li:last-child { border-bottom: none; }
+
+.lang-flag { font-size: 28px; line-height: 1; }
+
+.lang-name {
+  font-weight: 600;
+  min-width: 90px;
+}
+
+.lang-level {
+  color: var(--text-muted);
+  font-size: 14px;
+  flex: 1;
+}
+
+.lang-dots {
+  display: flex;
+  gap: 5px;
+  flex-shrink: 0;
+}
+
+.lang-dots .dot {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: var(--border);
+}
+
+.lang-dots .dot.on { background: var(--accent); }
+
+.skill-card-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+
+.skill-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 14px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--surface);
+}
+
+.skill-card-icon { font-size: 20px; line-height: 1.3; }
+
+.skill-card-title {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+.skill-card-title small {
+  display: block;
+  font-weight: 400;
+  color: var(--text-muted);
+  font-size: 12px;
+  margin-top: 3px;
+}
+
+@media (max-width: 700px) {
+  .skill-card-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 480px) {
+  .skill-card-grid { grid-template-columns: 1fr; }
+}
+
+.skill-group { margin-bottom: 20px; }
+.skill-group:last-child { margin-bottom: 0; }
+
+.skill-group-label {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  color: var(--accent);
+  margin: 0 0 10px;
+}
+
+.icon-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.icon-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 10px 0;
+  color: var(--text-muted);
+  font-size: 16px;
+}
+
+.icon-list-icon { flex-shrink: 0; font-size: 18px; line-height: 1.5; }
+
+.membership-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.membership-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 16px;
+  padding: 12px 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.membership-list li:last-child { border-bottom: none; }
+
+.membership-name { color: var(--text); }
+
+.membership-year {
+  flex-shrink: 0;
+  font-family: var(--font-mono);
+  font-size: 13px;
+  color: var(--accent);
+  white-space: nowrap;
+}
