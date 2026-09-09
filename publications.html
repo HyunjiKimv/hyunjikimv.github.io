@@ -9,10 +9,23 @@
 </head>
 <body>
 
-<header class="site-header">
-  <div class="wrap header-inner">
-    <a class="brand" href="index.html">Hyunji Kim</a>
-    <nav class="nav">
+<div class="app-shell">
+  <aside class="sidebar">
+    <div class="sidebar-photo">
+      <img src="photo.jpg" alt="Hyunji Kim" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+      <div class="sidebar-photo-fallback">HK</div>
+    </div>
+    <a class="sidebar-name" href="index.html">Hyunji Kim</a>
+    <p class="sidebar-role">Visiting Researcher<br>University Health Network (UHN)<br>University of Toronto</p>
+    <p class="sidebar-location">Toronto, Canada</p>
+    <div class="sidebar-links">
+      <a href="https://drive.google.com/file/d/1wwev5_-OX1BcI0KfvLyifdSJuhHzYDey/view?usp=sharing" target="_blank" rel="noopener">CV</a>
+      <a href="https://www.linkedin.com/in/hyunjikim1/" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://github.com/HyunjiKimv" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://scholar.google.co.kr/citations?hl=ko&user=TRpmw5oAAAAJ" target="_blank" rel="noopener">Google Scholar</a>
+      <a href="https://www.researchgate.net/profile/Hyunji-Kim-32" target="_blank" rel="noopener">ResearchGate</a>
+    </div>
+    <nav class="sidebar-nav">
       <a href="index.html">Home</a>
       <a href="research.html">Research</a>
       <a href="publications.html" class="active">Publications</a>
@@ -21,10 +34,10 @@
       <a href="skills.html">Skills</a>
       <a href="contact.html">Contact</a>
     </nav>
-  </div>
-</header>
+  </aside>
 
-<main>
+  <div class="main-col">
+    <main>
   <section class="section wrap">
     <h1 class="page-title">Publications</h1>
     <p class="section-lead">You can also find my articles on my <a href="https://scholar.google.co.kr/citations?hl=ko&user=TRpmw5oAAAAJ" target="_blank" rel="noopener">Google Scholar</a> and <a href="https://www.researchgate.net/profile/Hyunji-Kim-32" target="_blank" rel="noopener">ResearchGate </a>profile.</p>
@@ -53,7 +66,7 @@
       </a>
     </div>
 
-    <h2 class="pub-category">Published Journal Papers</h2>
+    <h2 class="sub">Published Journal Papers</h2>
 
     <h3 class="pub-year">2025</h3>
     <div class="pub-entry">
@@ -91,7 +104,7 @@
       <div class="pub-venue"><em>Exercise Science</em>.</div>
     </div>
 
-    <h2 class="pub-category">In Review / In Preparation</h2>
+    <h2 class="sub">In Review / In Preparation</h2>
 
     <div class="pub-entry">
       <div class="pub-title">Estimation of Pulmonary Oxygen Uptake (VO2) and Carbon Dioxide Production (VCO2) Using Transfer Learning</div>
@@ -129,7 +142,7 @@
       <div class="pub-venue"><span class="pub-status">In preparation</span></div>
     </div>
 
-    <h2 class="pub-category">International Conference — Oral Presentations</h2>
+    <h2 class="sub">International Conference — Oral Presentations</h2>
 
     <h3 class="pub-year">2026</h3>
     <div class="pub-entry">
@@ -169,7 +182,7 @@
       <div class="pub-venue">International Textile and Apparel Association Annual Conference Proceedings 78(1).</div>
     </div>
 
-    <h2 class="pub-category">International Conference — Poster Presentations</h2>
+    <h2 class="sub">International Conference — Poster Presentations</h2>
 
     <h3 class="pub-year">2026</h3>
     <div class="pub-entry">
@@ -195,7 +208,7 @@
       <div class="pub-venue">2025 ASB International Conference.</div>
     </div>
 
-    <h2 class="pub-category">Domestic Conference — Oral Presentations</h2>
+    <h2 class="sub">Domestic Conference — Oral Presentations</h2>
 
     <h3 class="pub-year">2026</h3>
     <div class="pub-entry">
@@ -230,7 +243,7 @@
       <div class="pub-venue">2021 Fall International Conference of Korean Society of Sport Biomechanics. <span class="tag">Excellent Presentation Award</span></div>
     </div>
 
-    <h2 class="pub-category">Domestic Conference — Poster Presentations</h2>
+    <h2 class="sub">Domestic Conference — Poster Presentations</h2>
 
     <h3 class="pub-year">2025</h3>
     <div class="pub-entry">
@@ -246,11 +259,13 @@
       <div class="pub-venue">2022 Fall International Conference of KSSB-KSB. <span class="tag">Best Poster Presentation Award</span></div>
     </div>
   </section>
-</main>
+    </main>
 
-<footer class="site-footer wrap">
-  <p>&copy; 2026 Hyunji Kim</p>
-</footer>
+    <footer class="site-footer wrap">
+      <p>&copy; 2026 Hyunji Kim</p>
+    </footer>
+  </div>
+</div>
 
 </body>
 </html>

@@ -9,10 +9,23 @@
 </head>
 <body>
 
-<header class="site-header">
-  <div class="wrap header-inner">
-    <a class="brand" href="index.html">Hyunji Kim</a>
-    <nav class="nav">
+<div class="app-shell">
+  <aside class="sidebar">
+    <div class="sidebar-photo">
+      <img src="photo.jpg" alt="Hyunji Kim" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+      <div class="sidebar-photo-fallback">HK</div>
+    </div>
+    <a class="sidebar-name" href="index.html">Hyunji Kim</a>
+    <p class="sidebar-role">Visiting Researcher<br>University Health Network (UHN)<br>University of Toronto</p>
+    <p class="sidebar-location">Toronto, Canada</p>
+    <div class="sidebar-links">
+      <a href="https://drive.google.com/file/d/1wwev5_-OX1BcI0KfvLyifdSJuhHzYDey/view?usp=sharing" target="_blank" rel="noopener">CV</a>
+      <a href="https://www.linkedin.com/in/hyunjikim1/" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://github.com/HyunjiKimv" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://scholar.google.co.kr/citations?hl=ko&user=TRpmw5oAAAAJ" target="_blank" rel="noopener">Google Scholar</a>
+      <a href="https://www.researchgate.net/profile/Hyunji-Kim-32" target="_blank" rel="noopener">ResearchGate</a>
+    </div>
+    <nav class="sidebar-nav">
       <a href="index.html" class="active">Home</a>
       <a href="research.html">Research</a>
       <a href="publications.html">Publications</a>
@@ -21,15 +34,12 @@
       <a href="skills.html">Skills</a>
       <a href="contact.html">Contact</a>
     </nav>
-  </div>
-</header>
+  </aside>
 
-<main>
+  <div class="main-col">
+    <main>
 
-  <section class="hero wrap">
-    <div class="hero-inner">
-      <div class="hero-text">
-        <p class="eyebrow">Visiting Researcher, University Health Network (UHN) · University of Toronto</p>
+      <section class="hero wrap">
         <h1>Hyunji Kim</h1>
         <p class="hero-lead">
           I develop accessible systems for physiological assessment and movement monitoring by combining biomechanics,
@@ -38,54 +48,55 @@
           this work through textile-based sensing and predictive modeling for heart failure monitoring, aiming to develop
           clinically meaningful systems that can be used beyond specialized laboratories and hospitals.
         </p>
-        <div class="hero-links">
-          <a class="btn btn-primary" href="https://drive.google.com/file/d/1wwev5_-OX1BcI0KfvLyifdSJuhHzYDey/view?usp=sharing" target="_blank" rel="noopener">CV (PDF)</a>
-          <a class="btn" href="https://www.linkedin.com/in/hyunjikim1/" target="_blank" rel="noopener">LinkedIn</a>
-          <a class="btn" href="https://github.com/HyunjiKimv" target="_blank" rel="noopener">GitHub</a>
-          <a class="btn" href="https://scholar.google.co.kr/citations?hl=ko&user=TRpmw5oAAAAJ" target="_blank" rel="noopener">Google Scholar</a>
-          <a class="btn" href="https://www.researchgate.net/profile/Hyunji-Kim-32" target="_blank" rel="noopener">ResearchGate</a>
+      </section>
+
+      <section id="about" class="section wrap">
+        <h2>About</h2>
+        <p>
+          I completed my Ph.D. at the <a href="https://sports-engineering-lab.snu.ac.kr/" target="_blank" rel="noopener noreferrer">Sports Engineering Lab</a>, Department of Kinesiology, Seoul National
+          University (2021 Sep – 2026 Feb), with a dissertation on deep learning–based VO<sub>2</sub>/VCO<sub>2</sub>
+          estimation and fitness assessment for individuals with spinal cord injury, aimed at making
+          self-directed exercise monitoring accessible outside the lab. Before that, my M.S. work examined
+          how shoe conditions shape the biomechanics of recreational runners. I originally trained in
+          chemistry education (B.S., Seoul National University) before moving into human exercise science.
+        </p>
+        <p>
+          Since July 2026, I've been a Visiting Researcher at the University Health Network (UHN), affiliated
+          with the University of Toronto. In October 2026, I'll begin a Postdoctoral Researcher appointment at UHN
+          as part of the <a href="https://www.uhn.ca/corporate/News/Pages/canada-leads-uhn-launches-strategy-to-attract-world-leading-early-career-scientists.aspx"
+         target="_blank" rel="noopener noreferrer">Canada Leads 100 Challenge</a>, an initiative to recruit 100 world-leading early-career scientists
+          to UHN. My work focuses on developing more accessible, clinically grounded wearable monitoring technologies.
+        </p>
+        <div class="pillbox">
+          <span class="pill">Wearable sensing</span>
+          <span class="pill">Textile-based wearable systems</span>
+          <span class="pill">Heart failure monitoring</span>
+          <span class="pill">Wearable assistive technology</span>
+          <span class="pill">Biomechanics of underrepresented populations</span>
+          <span class="pill">Musculoskeletal modeling</span>
         </div>
-      </div>
-      <div class="hero-photo">
-        <img src="photo.jpg" alt="Hyunji Kim" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-        <div class="hero-photo-fallback">HK</div>
-      </div>
-    </div>
-  </section>
+      </section>
 
-  <section id="about" class="section wrap">
-    <h2>About</h2>
-    <p>
-      I completed my Ph.D. at the <a href="https://sports-engineering-lab.snu.ac.kr/" target="_blank" rel="noopener noreferrer">Sports Engineering Lab</a>, Department of Kinesiology, Seoul National
-      University (2021 Sep – 2026 Feb), with a dissertation on deep learning–based VO<sub>2</sub>/VCO<sub>2</sub>
-      estimation and fitness assessment for individuals with spinal cord injury, aimed at making
-      self-directed exercise monitoring accessible outside the lab. Before that, my M.S. work examined
-      how shoe conditions shape the biomechanics of recreational runners. I originally trained in
-      chemistry education (B.S., Seoul National University) before moving into human exercise science.
-    </p>
-    <p>
-      Since July 2026, I've been a Visiting Researcher at the University Health Network (UHN), affiliated
-      with the University of Toronto. In October 2026, I'll begin a Postdoctoral Researcher appointment at UHN
-      as part of the <a href="https://www.uhn.ca/corporate/News/Pages/canada-leads-uhn-launches-strategy-to-attract-world-leading-early-career-scientists.aspx"
-     target="_blank" rel="noopener noreferrer">Canada Leads 100 Challenge</a>, an initiative to recruit 100 world-leading early-career scientists
-      to UHN. My work focuses on developing more accessible, clinically grounded wearable monitoring technologies.
-    </p>
-    <div class="pillbox">
-      <span class="pill">Wearable sensing</span>
-      <span class="pill">Textile-based wearable systems</span>
-      <span class="pill">Heart failure monitoring</span>
-      <span class="pill">Wearable assistive technology</span>
-      <span class="pill">Biomechanics of underrepresented populations</span>
-      <span class="pill">Musculoskeletal modeling</span>
-    </div>
-  </section>
+      <section id="highlights" class="section wrap">
+        <h2>Highlights</h2>
+        <div class="highlight-slideshow">
+          <div class="highlight-slideshow-fallback">🖼️</div>
+          <img class="highlight-slide" style="animation-delay:0s" src="images/highlights/1.jpg" alt="Research highlight 1" loading="lazy" onerror="this.style.display='none';">
+          <img class="highlight-slide" style="animation-delay:5s" src="images/highlights/2.jpg" alt="Research highlight 2" loading="lazy" onerror="this.style.display='none';">
+          <img class="highlight-slide" style="animation-delay:10s" src="images/highlights/3.jpg" alt="Research highlight 3" loading="lazy" onerror="this.style.display='none';">
+          <img class="highlight-slide" style="animation-delay:15s" src="images/highlights/4.jpg" alt="Research highlight 4" loading="lazy" onerror="this.style.display='none';">
+          <img class="highlight-slide" style="animation-delay:20s" src="images/highlights/5.jpg" alt="Research highlight 5" loading="lazy" onerror="this.style.display='none';">
+        </div>
+        <p class="highlight-caption">A rotating look at experiments, figures, and prototypes from the work above.</p>
+      </section>
 
+    </main>
 
-</main>
-
-<footer class="site-footer wrap">
-  <p>&copy; 2026 Hyunji Kim</p>
-</footer>
+    <footer class="site-footer wrap">
+      <p>&copy; 2026 Hyunji Kim</p>
+    </footer>
+  </div>
+</div>
 
 </body>
 </html>
