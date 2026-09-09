@@ -73,6 +73,14 @@ h1, h2, h3, h4, h5, h6 {
   overflow-y: auto;
   display: flex;
   flex-direction: column;
+  background: var(--bg);
+  z-index: 20;
+}
+
+.sidebar-top {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
 .sidebar-photo {
@@ -83,6 +91,7 @@ h1, h2, h3, h4, h5, h6 {
   overflow: hidden;
   background: var(--accent-soft);
   margin-bottom: 16px;
+  flex-shrink: 0;
 }
 
 .sidebar-photo img {
@@ -103,6 +112,11 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
 }
 
+.sidebar-id {
+  display: flex;
+  flex-direction: column;
+}
+
 .sidebar-name {
   display: block;
   font-family: var(--font-display);
@@ -110,14 +124,7 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 21px;
   color: var(--text);
   text-decoration: none;
-  margin-bottom: 10px;
-}
-
-.sidebar-role {
-  font-size: 14px;
-  line-height: 1.5;
-  color: var(--text-muted);
-  margin: 0 0 8px;
+  margin-bottom: 6px;
 }
 
 .sidebar-location {
@@ -126,25 +133,42 @@ h1, h2, h3, h4, h5, h6 {
   text-transform: uppercase;
   letter-spacing: 0.03em;
   color: var(--accent);
-  margin: 0 0 24px;
+  margin: 0;
+}
+
+.sidebar-role {
+  font-size: 14px;
+  line-height: 1.5;
+  color: var(--text-muted);
+  margin: 16px 0 20px;
 }
 
 .sidebar-links {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 12px;
   padding-bottom: 24px;
   margin-bottom: 24px;
   border-bottom: 1px solid var(--border);
 }
 
 .sidebar-links a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
   font-size: 14px;
   color: var(--text);
   text-decoration: none;
 }
 
 .sidebar-links a:hover { color: var(--accent); }
+
+.link-icon {
+  display: inline-flex;
+  width: 20px;
+  flex-shrink: 0;
+  font-size: 15px;
+}
 
 .sidebar-nav {
   display: flex;
@@ -173,12 +197,43 @@ h1, h2, h3, h4, h5, h6 {
 
   .sidebar {
     width: 100%;
-    position: static;
     height: auto;
+    max-height: 100vh;
     border-right: none;
     border-bottom: 1px solid var(--border);
-    padding: 28px 24px;
+    padding: 14px 20px;
+    gap: 12px;
   }
+
+  .sidebar-top {
+    flex-direction: row;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .sidebar-photo {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 0;
+  }
+
+  .sidebar-name { font-size: 17px; margin-bottom: 2px; }
+
+  .sidebar-role { display: none; }
+
+  .sidebar-links {
+    flex-direction: row;
+    gap: 18px;
+    padding-bottom: 12px;
+    margin-bottom: 12px;
+    overflow-x: auto;
+  }
+
+  .sidebar-links a { flex-shrink: 0; }
+
+  .link-label { display: none; }
+
+  .link-icon { font-size: 20px; width: auto; }
 
   .sidebar-nav {
     flex-direction: row;
